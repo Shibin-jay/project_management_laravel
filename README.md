@@ -42,7 +42,7 @@ php artisan migrate
 ```bash
 composer require laravel/passport
 php artisan migrate
-php artisan passport:install --force
+php artisan passport:install 
 ```
 Copy the generated **Personal Access Client ID & Secret** into `.env`:
 ```
