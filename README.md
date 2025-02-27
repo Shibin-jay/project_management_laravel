@@ -1,5 +1,7 @@
 # Project Management API
 
+📌 **Images of Postman API requests are available in the `docs/images/` folder.**
+
 ## 📌 Overview
 This is a **Laravel API** for managing projects and tasks. Users can **register, log in, create projects, add tasks, update task statuses, and generate reports.**
 
@@ -40,7 +42,7 @@ php artisan migrate
 ```bash
 composer require laravel/passport
 php artisan migrate
-php artisan passport:install
+php artisan passport:install --force
 ```
 Copy the generated **Personal Access Client ID & Secret** into `.env`:
 ```
@@ -253,9 +255,3 @@ To test with **Postman**, import the provided Postman collection.
 This project is licensed under the **MIT License**.
 
 ---
-## 📞 Contact
-For any questions, feel free to contact:
-- **Developer:** Shibin Siyad K
-- **Email:** shibinsiyadkofficial@gmail.com
-- **GitHub:** [Shibin-jay](https://github.com/Shibin-jay)
-
