@@ -1,6 +1,7 @@
 # Project Management API
 
 📌 **Images of Postman API requests are available in the `docs/images/` folder.**
+📌 **Postman request collection are available in the `docs/postman/` folder.**
 
 ## 📌 Overview
 This is a **Laravel API** for managing projects and tasks. Users can **register, log in, create projects, add tasks, update task statuses, and generate reports.**
