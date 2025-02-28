@@ -2,6 +2,7 @@
 
 📌 **Images of Postman API requests are available in the `docs/images/` folder.**
 📌 **Postman request collection are available in the `docs/postman/` folder.**
+📌 **Database migration details are documented in the `docs/database/` folder.**
 
 ## 📌 Overview
 This is a **Laravel API** for managing projects and tasks. Users can **register, log in, create projects, add tasks, update task statuses, and generate reports.**
@@ -38,6 +39,29 @@ DB_PASSWORD=
 ```bash
 php artisan migrate
 ```
+
+### **Database Migrations**
+The following migrations are included in the project:
+
+1. **Users Table** (`create_users_table`)
+   - Stores user details (name, email, password, timestamps).
+   - Fields: `id`, `name`, `email`, `password`, `created_at`, `updated_at`.
+
+2. **Projects Table** (`create_projects_table`)
+   - Stores project details.
+   - Fields: `id`, `user_id` (foreign key), `title`, `description`, `created_at`, `updated_at`.
+
+3. **Tasks Table** (`create_tasks_table`)
+   - Stores tasks related to projects.
+   - Fields: `id`, `project_id` (foreign key), `title`, `status`, `created_at`, `updated_at`.
+
+4. **Task Remarks Table** (`create_task_remarks_table`)
+   - Stores remarks added to tasks.
+   - Fields: `id`, `task_id` (foreign key), `text`, `created_at`, `updated_at`.
+
+5. **OAuth Tables** (Passport Authentication)
+   - Includes tables like `oauth_clients`, `oauth_access_tokens`, `oauth_refresh_tokens`, etc., for authentication.
+
 
 ### **5️⃣ Install Laravel Passport**
 ```bash
